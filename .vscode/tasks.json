@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Frontend: Start Dev Server (Vite)",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Backend: Start Flask API",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe app.py",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    }
+  ]
+}
